@@ -44,8 +44,8 @@ A professional Python application that automatically monitors directories for PD
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/insurance-pdf-parser.git
-   cd insurance-pdf-parser
+   git clone https://github.com/JirkaEifler/Insurance-PDF-Parser
+   cd Insurance_PDF_Parser
    ```
 
 2. **Install required dependencies**
@@ -53,16 +53,9 @@ A professional Python application that automatically monitors directories for PD
    pip install -r requirements.txt
    ```
 
-3. **Create requirements.txt** (if not exists):
-   ```txt
-   PyMuPDF>=1.23.0
-   pandas>=1.5.0
-   watchdog>=3.0.0
-   ```
-
 ## ⚙️ Configuration
 
-Update the following constants in the main script according to your setup:
+Update your own local configuration in the file: PDF_Parser/config.py
 
 ```python
 # Directory paths configuration
@@ -86,8 +79,13 @@ your_project/
 ### Basic Usage
 
 1. **Start the monitoring service**
+From the project root folder (the one that contains PDF_Parser/), run:
    ```bash
-   python insurance_parser.py
+   python -m PDF_Parser.pdf_parser
+   ```
+This is necessary because the script uses relative imports like:
+   ```bash
+from PDF_Parser.config import ...
    ```
 
 2. **Add PDF files** to the watch directory
@@ -109,19 +107,6 @@ your_project/
 📥 New PDF file detected: allianz_quote_12345.pdf
 🏢 Processing Allianz document
 ✅ Data extracted and file processed successfully.
-```
-
-### Advanced Usage
-
-**Custom data extraction**:
-```python
-from insurance_parser import extract_data_allianz
-
-# Extract data from specific file
-with open('sample.pdf', 'rb') as file:
-    text = extract_text_from_pdf(file)
-    data = extract_data_allianz(text, 'sample.pdf')
-    print(data)
 ```
 
 ## 📊 Data Structure

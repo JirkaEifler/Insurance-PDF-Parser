@@ -11,7 +11,7 @@ Date: 2025
 import os
 import re
 import time
-from typing import Dict, Any, Optional
+from typing import Dict, Any
 
 import fitz  # PyMuPDF
 import pandas as pd
@@ -19,10 +19,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 # Configuration constants
-WATCH_FOLDER = "/Users/jirieifler/All_IT_Projects/Kuba_pojistovny/POJISTOVNY/PDFka"
-CSV_PATH = "/Users/jirieifler/All_IT_Projects/Kuba_pojistovny/POJISTOVNY/EVIDENCE_UDAJE_AUTA.csv"
-SORTED_FOLDER = "/Users/jirieifler/All_IT_Projects/Kuba_pojistovny/POJISTOVNY/ZPRACOVANE"
-ERROR_FOLDER = "/Users/jirieifler/All_IT_Projects/Kuba_pojistovny/POJISTOVNY/CHYBY"
+from PDF_Parser.config import WATCH_FOLDER, CSV_PATH, SORTED_FOLDER, ERROR_FOLDER
 
 
 def extract_common_fields() -> Dict[str, str]:
