@@ -251,8 +251,10 @@ def test_allianz_extraction():
 - Update README for new features
 
 ## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- This project is proprietary software.
+- © 2025 Jiří Eifler. 
+- All rights reserved. 
+- No part of this repository may be copied, modified, distributed, or used without explicit written permission from the author.
 
 ## 🆘 Support
 
@@ -274,10 +276,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Review system logs for memory issues
 
 ### Getting Help
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/insurance-pdf-parser/issues)
-- **Documentation**: [Project Wiki](https://github.com/yourusername/insurance-pdf-parser/wiki)
-- **Email**: your.email@example.com
+- **Email**: jirka.eifler@gmail.com
 
 ---
 
