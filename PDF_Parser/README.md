@@ -186,9 +186,6 @@ tail -f application.log
 
 # Monitor error folder
 ls -la /path/to/CHYBY/
-
-# Verify CSV output
-head -n 5 EVIDENCE_UDAJE_AUTA.csv
 ```
 
 ## 🔧 Development
@@ -211,14 +208,7 @@ head -n 5 EVIDENCE_UDAJE_AUTA.csv
    ```
 
 ### Testing
-
-```python
-# Unit testing example
-def test_allianz_extraction():
-    sample_text = "Sample Allianz PDF content..."
-    result = extract_data_allianz(sample_text, "test.pdf")
-    assert result["Pojistník - Typ osoby"] == "fyzická osoba"
-```
+*(Not implemented yet)*
 
 ## 🤝 Contributing
 
