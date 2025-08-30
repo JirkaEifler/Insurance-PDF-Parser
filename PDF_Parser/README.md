@@ -1,6 +1,6 @@
 # Insurance PDF Parser
 
-A professional Python application that automatically monitors directories for PDF insurance documents and extracts structured data into CSV format. Currently supports three major Czech insurance companies: **Allianz**, **Kooperativa**, and **Generali**.
+A Python application that automatically monitors directories for PDF insurance documents and extracts structured data into CSV format. Currently supports three major Czech insurance companies: **Allianz**, **Kooperativa**, and **Generali**.
 
 ## 📋 Table of Contents
 
