@@ -255,4 +255,3 @@ ls -la /path/to/CHYBY/
 
 ---
 
-**Made with ❤️ for insurance data automation**
