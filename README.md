@@ -2,6 +2,8 @@
 
 A Python application that automatically monitors directories for PDF insurance documents and extracts structured data into CSV format. Currently supports three major Czech insurance companies: **Allianz**, **Kooperativa**, and **Generali**.
 
+⚠️ Please note: The project does not include any actual invoices, as they contain personal information and cannot be published publicly.
+
 ## 📋 Table of Contents
 
 - [Features](#features)
